@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 // product reducer
 
 import { createSlice } from '@reduxjs/toolkit'
@@ -29,9 +28,3 @@ const productSlice = createSlice({
 })
 
 export const product = productSlice.reducer
-<<<<<<< HEAD
-=======
-=======
-// create product reducer
->>>>>>> frontend-ui
->>>>>>> frontend
