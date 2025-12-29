@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // cart reducer
 
 import { createSlice } from '@reduxjs/toolkit'
@@ -16,3 +17,6 @@ const cartSlice = createSlice({
   },
 })
 export const cart = cartSlice.reducer
+=======
+// create cart reducer
+>>>>>>> frontend-ui

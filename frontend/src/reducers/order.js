@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // order reducer
 
 import { createSlice } from '@reduxjs/toolkit'
@@ -25,3 +26,6 @@ const orderSlice = createSlice({
 })
 
 export const order = orderSlice.reducer
+=======
+// create order reducer
+>>>>>>> frontend-ui
