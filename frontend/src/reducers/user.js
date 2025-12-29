@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 // user reducer
 
 //loginuser  : userInfo
@@ -29,6 +28,3 @@ const userSlice = createSlice({
 })
 
 export const user = userSlice.reducer
-=======
-// create user reducer
->>>>>>> frontend-ui
