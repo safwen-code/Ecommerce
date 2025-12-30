@@ -1,8 +1,11 @@
 import HomeScreen from './components/HomeScreen'
+import { Router, Route } from 'react-router-dom'
 const App = () => {
   return (
     <>
-      <HomeScreen />
+      <Router>
+        <Route exact path="/" element={<HomeScreen />} />
+      </Router>
     </>
   )
 }
