@@ -74,3 +74,54 @@ export const products = [
     updatedAt: '2024-10-18T12:00:00.000Z',
   },
 ]
+
+export const orders = [
+  {
+    _id: 'ORD-1001',
+    createdAt: '2025-01-05T10:30:00.000Z',
+    totalPrice: 250.5,
+    isPaid: true,
+    paidAt: '2025-01-06T09:15:00.000Z',
+    isDelivered: true,
+    deliveredAt: '2025-01-08T14:20:00.000Z',
+  },
+  {
+    _id: 'ORD-1002',
+    createdAt: '2025-01-10T16:45:00.000Z',
+    totalPrice: 99.99,
+    isPaid: false,
+    paidAt: null,
+    isDelivered: false,
+    deliveredAt: null,
+  },
+  {
+    _id: 'ORD-1003',
+    createdAt: '2025-01-12T08:10:00.000Z',
+    totalPrice: 430,
+    isPaid: true,
+    paidAt: '2025-01-12T12:00:00.000Z',
+    isDelivered: false,
+    deliveredAt: null,
+  },
+]
+
+export const users = [
+  {
+    id: '1',
+    name: 'djo',
+    email: 'djo@yaml.com',
+    admin: true,
+  },
+  {
+    id: '2',
+    name: 'djo',
+    email: 'djo@yaml.com',
+    admin: false,
+  },
+  {
+    id: '1',
+    name: 'djo',
+    email: 'djo@yaml.com',
+    admin: false,
+  },
+]
