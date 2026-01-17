@@ -9,17 +9,17 @@ import UserRegister from './components/usersUi/UserRegister'
 import Profile from './components/usersUi/Profile'
 import UserUpdate from './components/usersUi/UserUpdate'
 import UsersList from './components/usersUi/UsersList'
+import OrderList from './components/ordersUi/OrderList'
+import OrderById from './components/ordersUi/OderById'
 const App = () => {
   return (
     <>
       <Router>
         <Routes>
           <Route exact path="/" element={<HomeScreen />} />
-
           <Route path="/admin/ListPrd" element={<PrdListScreen />} />
           <Route path="/admin/UpdatePrd" element={<PrdUpdateScreen />} />
           <Route exact path="/Prdbyid" element={<PrdDetail />} />
-
           <Route path="/login" element={<UserLogin />} />
           <Route path="/register" element={<UserRegister />} />
           <Route path="/user/profile" element={<Profile />} />
@@ -28,6 +28,9 @@ const App = () => {
             path="/admin/user/parmsid/editeUser"
             element={<UserUpdate />}
           />
+
+          <Route path="/admin/ListOrder" element={<OrderList />} />
+          <Route path="/admin/Order" element={<OrderById />} />
         </Routes>
       </Router>
     </>
