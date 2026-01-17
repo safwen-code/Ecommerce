@@ -1,9 +1,14 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 
 import HomeScreen from './components/HomeScreen'
-import { PrdListScreen } from './components/productsUi/PrdListScreen'
-import { PrdUpdateScreen } from './components/productsUi/PrdUpdateScreen'
-import { PrdDetail } from './components/productsUi/PrdDetail'
+import PrdListScreen from './components/productsUi/PrdListScreen'
+import PrdUpdateScreen from './components/productsUi/PrdUpdateScreen'
+import PrdDetail from './components/productsUi/PrdDetail'
+import UserLogin from './components/usersUi/UserLogin'
+import UserRegister from './components/usersUi/UserRegister'
+import Profile from './components/usersUi/Profile'
+import UserUpdate from './components/usersUi/UserUpdate'
+import UsersList from './components/usersUi/UsersList'
 const App = () => {
   return (
     <>
@@ -11,13 +16,13 @@ const App = () => {
         <Routes>
           <Route exact path="/" element={<HomeScreen />} />
 
-          <Route exact path="/ListPrd" element={<PrdListScreen />} />
-          <Route exact path="/UpdatePrd" element={<PrdUpdateScreen />} />
+          <Route path="/admin/ListPrd" element={<PrdListScreen />} />
+          <Route path="/admin/UpdatePrd" element={<PrdUpdateScreen />} />
           <Route exact path="/Prdbyid" element={<PrdDetail />} />
 
           <Route path="/login" element={<UserLogin />} />
           <Route path="/register" element={<UserRegister />} />
-          <Route path="/profile" element={<Profile />} />
+          <Route path="/user/profile" element={<Profile />} />
           <Route path="/admin/ListUser" element={<UsersList />} />
           <Route
             path="/admin/user/parmsid/editeUser"
