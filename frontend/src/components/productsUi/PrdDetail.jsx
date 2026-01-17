@@ -169,7 +169,8 @@ const PrdDetail = () => {
             <Typography variant="h5" gutterBottom>
               Write a Customer Review
             </Typography>
-            <AddReview />
+            {/* add review */}
+            {/* <AddReview /> */}
           </Box>
         </Grid>
       </Grid>
