@@ -109,6 +109,16 @@ export const orders = [
     paidAt: '2025-01-06T09:15:00.000Z',
     isDelivered: true,
     deliveredAt: '2025-01-08T14:20:00.000Z',
+    user: {
+      name: 'safwen',
+      email: 'safwendjebb@gmail.com',
+    },
+    shippingAddress: {
+      address: 'ben arous',
+      city: 'boumhal',
+      postalCode: '1135',
+      country: 'hthili',
+    },
   },
   {
     _id: 'ORD-1002',
@@ -144,7 +154,7 @@ export const users = [
     admin: false,
   },
   {
-    id: '1',
+    id: '3',
     name: 'djo',
     email: 'djo@yaml.com',
     admin: false,
