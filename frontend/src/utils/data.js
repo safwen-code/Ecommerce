@@ -187,3 +187,41 @@ export const cartItems = [
     qty: 1,
   },
 ]
+
+export const cart = {
+  cartItems: [
+    {
+      product: '1',
+      name: 'Apple iPhone 14 Pro',
+      image: 'https://via.placeholder.com/150',
+      price: 999.99,
+      countInStock: 5,
+      qty: 1,
+    },
+    {
+      product: '2',
+      name: 'Samsung Galaxy S23',
+      image: 'https://via.placeholder.com/150',
+      price: 849.5,
+      countInStock: 10,
+      qty: 2,
+    },
+    {
+      product: '3',
+      name: 'Sony WH-1000XM5 Headphones',
+      image: 'https://via.placeholder.com/150',
+      price: 399.0,
+      countInStock: 3,
+      qty: 1,
+    },
+  ],
+
+  shippingAddress: {
+    address: '123 Main Street',
+    city: 'Tunis',
+    postalCode: '1000',
+    country: 'Tunisia',
+  },
+
+  paymentMethod: 'PayPal',
+}
