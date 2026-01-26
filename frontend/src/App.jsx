@@ -11,6 +11,9 @@ import UserUpdate from './components/usersUi/UserUpdate'
 import UsersList from './components/usersUi/UsersList'
 import OrderList from './components/ordersUi/OrderList'
 import OrderById from './components/ordersUi/OderById'
+import Cart from './components/paymentUI/Cart'
+import Shipping from './components/paymentUI/Shipping'
+
 const App = () => {
   return (
     <>
@@ -32,10 +35,10 @@ const App = () => {
           <Route path="/admin/ListOrder" element={<OrderList />} />
           <Route path="/admin/Order/:id" element={<OrderById />} />
 
-          <Route path="/payment" element={<PaymentScreen />} />
-          <Route path="/cart/:id?" element={<CartScreen />} />
-          <Route path="/shipping" element={<ShippingScreen />} />
-          <Route path="/placeorder" element={<PlaceOrderScreen />} />
+          <Route path="/cart" element={<Cart />} />
+          <Route path="/shipping" element={<Shipping />} />
+          {/* <Route path="/payment" element={<PaymentScreen />} />
+          <Route path="/placeorder" element={<PlaceOrderScreen />} /> */}
         </Routes>
       </Router>
     </>
