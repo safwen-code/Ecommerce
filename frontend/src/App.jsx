@@ -15,11 +15,13 @@ import Cart from './components/paymentUI/Cart'
 import Shipping from './components/paymentUI/Shipping'
 import Payment from './components/paymentUI/Payment'
 import PlaceOrder from './components/paymentUI/PlaceOrder'
+import Navbar from './Layout/Navbar'
 
 const App = () => {
   return (
     <>
       <Router>
+        <Navbar />
         <Routes>
           <Route exact path="/" element={<HomeScreen />} />
           <Route path="/admin/ListPrd" element={<PrdListScreen />} />
