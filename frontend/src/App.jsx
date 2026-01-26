@@ -13,6 +13,8 @@ import OrderList from './components/ordersUi/OrderList'
 import OrderById from './components/ordersUi/OderById'
 import Cart from './components/paymentUI/Cart'
 import Shipping from './components/paymentUI/Shipping'
+import Payment from './components/paymentUI/Payment'
+import PlaceOrder from './components/paymentUI/PlaceOrder'
 
 const App = () => {
   return (
@@ -37,8 +39,8 @@ const App = () => {
 
           <Route path="/cart" element={<Cart />} />
           <Route path="/shipping" element={<Shipping />} />
-          {/* <Route path="/payment" element={<PaymentScreen />} />
-          <Route path="/placeorder" element={<PlaceOrderScreen />} /> */}
+          <Route path="/payment" element={<Payment />} />
+          <Route path="/placeorder" element={<PlaceOrder />} />
         </Routes>
       </Router>
     </>
